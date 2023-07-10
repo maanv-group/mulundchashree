@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Amita:100,200,300,400,500,600,700");
+
+/*font-family: 'Amita', cursive;*/
+
+@import url("https://fonts.googleapis.com/css?family=Palanquin:400,500,600,700");
+
+/*font-family: 'Palanquin', sans-serif;*/
+
+@import url("../fonts/Google-Sans-css.css");
+
+/* font-family: 'Product Sans'; 300,400,500,700,900*/
+
+$theme-primary: #da0401;
+$theme-dark-accent: #eb5320;
+$theme-light-accent: #feca64;
+$theme-light-shade: #fef6f5;
+$theme-dark-shade: #221f1f;
+$colors: (
+	"theme-primary": #da0401,
+	"theme-dark-accent": #eb5320,
+	"theme-light-accent": #feca64,
+	"theme-light-shade": #fef6f5,
+	"theme-dark-shade": #221f1f,
+);
+
+h2,
+h1 {
+	font-family: "Amita", cursive;
+	font-weight: 700;
+}
+h3 {
+	font-family: "Amita", cursive;
+	font-weight: 500;
+}
+
+@each $class, $color in $colors {
+	.bg-#{$class} {
+		background-color: $color;
+	}
+	.text-#{$class} {
+		color: $color !important;
+	}
+}
+.btn {
+	@each $class, $color in $colors {
+		.btn-#{$class} {
+			background-color: $color;
+			@if $class = "theme-primary" {
+				color: $theme-light-shade;
+			} @else if $class = "theme-dark-accent" {
+				color: $theme-light-shade;
+			} @else {
+				color: $color;
+			}
+		}
+	}
+}
+
+.navbar {
+	.navbar-brand {
+		.brand-logo {
+			height: 50px;
+			width: auto;
+			transform-origin: top left;
+			transform: scale(2.5);
+		}
+	}
+	.navbar-collapse#navbarNav {
+		margin-left: 4vw;
+	}
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+				color: $theme-light-shade;
+				font-family: "Amita", cursive;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+
+
+
+
+.page-header{
+    background-color: $theme-dark-accent;
+    color: $theme-light-shade;
+    padding: 1rem 0 0.5rem 0;
+    text-align: center;
+}

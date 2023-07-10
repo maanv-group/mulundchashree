@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Pages extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,6 +20,17 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data['page'] = [
+			'title' => "सार्वजनिक उत्सव मंडळ"
+		];
+		$this->load->view('pages/index', $data);
+	}
+	
+	public function about()
+	{
+		$data['page'] = [
+			'title' => "मंडळाची माहिती - सार्वजनिक उत्सव मंडळ"
+		];
+		$this->load->view('pages/about', $data);
 	}
 }

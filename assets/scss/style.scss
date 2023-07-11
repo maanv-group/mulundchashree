@@ -23,6 +23,18 @@ $colors: (
 	"theme-dark-shade": #221f1f,
 );
 
+
+*{
+    font-family: 'Palanquin', sans-serif;
+    // font-family: 'Product Sans', sans-serif;
+}
+
+@media screen and (min-width: 990px) {
+    html{
+        font-size: 20px;
+    }
+}
+
 h2,
 h1 {
 	font-family: "Amita", cursive;
@@ -57,6 +69,11 @@ h3 {
 }
 
 .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
 	.navbar-brand {
 		.brand-logo {
 			height: 50px;
@@ -70,9 +87,10 @@ h3 {
 	}
 	.navbar-nav {
 		.nav-item {
+            text-align: right;
 			.nav-link {
 				color: $theme-light-shade;
-				font-family: "Amita", cursive;
+				// font-family: "Amita", cursive;
 				font-weight: 500;
 			}
 		}
@@ -80,12 +98,35 @@ h3 {
 }
 
 
-
-
-
-.page-header{
-    background-color: $theme-dark-accent;
-    color: $theme-light-shade;
-    padding: 1rem 0 0.5rem 0;
-    text-align: center;
+main{
+    section{
+        &:nth-child(2n){
+            background-color: darken($color: $theme-light-shade, $amount: 5);
+        }
+        min-height: 90vh;
+        padding-top: 80px;
+        .page-header{
+            color: $theme-primary;
+            padding: 1rem 0 2.5rem 0;
+            text-align: center;
+            h1{
+                position: relative;
+                z-index: 0;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -2.5rem;
+                    filter: hue-rotate(20deg) contrast(1.5);
+                    left: 0;
+                    width: 100%;
+                    height: 2.5rem;
+                    background: url("../../assets/title-underline.png") no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
 }
+
+

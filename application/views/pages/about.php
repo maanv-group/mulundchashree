@@ -7,9 +7,7 @@
 
 <body>
   <?php $this->load->view("components/_common_nav") ?>
-  <div class="page-header">
-    <h1>मंडळाची माहिती</h1>
-  </div>
+  
   <main>
   </main>
   <?php $this->load->view("components/_common_js") ?>

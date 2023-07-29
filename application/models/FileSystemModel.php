@@ -7,8 +7,8 @@ class FileSystemModel extends CI_Model{
 
     public function scan_dir($path){
         $files = [];
-        foreach (glob($path. "*.*") as $file) {
-            array_push($files, explode($path, $file)[1]);
+        foreach (scandir($path) as $file) {
+            array_push($files, $file);
         }
         return $files;
     }

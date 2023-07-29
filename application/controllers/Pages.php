@@ -38,9 +38,9 @@ class Pages extends CI_Controller {
 	public function gallery()
 	{
 		$this->load->model('FileSystemModel');
-		$path =  FCPATH .'assets\\gallery\\2022\\';
+		$path =  FCPATH .'assets/gallery/2022/';
 		$images = $this->FileSystemModel->scan_dir($path);
-		return $images;
+		return array_slice($images, 2, count($images));
 		// print_r($images);
 		// print_r($path);
 	}

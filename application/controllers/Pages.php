@@ -21,7 +21,8 @@ class Pages extends CI_Controller {
 	public function index()
 	{
 		$data['page'] = [
-			'title' => "सार्वजनिक उत्सव मंडळ"
+			'title' => "सार्वजनिक उत्सव मंडळ",
+			'gallery' => $this->gallery()
 		];
 		$this->load->view('pages/index', $data);
 	}
@@ -32,5 +33,15 @@ class Pages extends CI_Controller {
 			'title' => "मंडळाची माहिती - सार्वजनिक उत्सव मंडळ"
 		];
 		$this->load->view('pages/about', $data);
+	}
+
+	public function gallery()
+	{
+		$this->load->model('FileSystemModel');
+		$path =  FCPATH .'assets\\gallery\\2022\\';
+		$images = $this->FileSystemModel->scan_dir($path);
+		return $images;
+		// print_r($images);
+		// print_r($path);
 	}
 }

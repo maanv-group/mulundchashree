@@ -12,9 +12,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">मुख्यपृष्ठ</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="<?= base_url("#about") ?>">मंडळाची माहिती</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url("#history") ?>">इतिहास मंडळाचा</a>
         </li>

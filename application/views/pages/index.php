@@ -18,7 +18,7 @@
                     <div class="col-xxl-6 col-xl-7 col-md-6 col-12"></div>
                     <div class="col-xxl-4 col-xl-5 col-md-6 col-12">
                         <div class="">
-                            <img class="w-100" src="<?= base_url('assets/heading.png') ?>" alt="">
+                            <!-- <img class="w-100" src="<?= base_url('assets/heading.png') ?>" alt=""> -->
                         </div>
                     </div>
                 </div>

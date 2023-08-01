@@ -146,12 +146,12 @@ main {
 		}
 		&#gallery{
 			.swiper-slide {
-				margin: 0 !important;
+				margin: 1rem !important;
 				.thumb {
 					width: 100%;
 					aspect-ratio: 1;
 					background-position: center;
-					background-size: contain;
+					background-size: cover;
 					background-repeat: no-repeat;
 				}
 			}

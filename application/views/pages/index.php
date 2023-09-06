@@ -14,11 +14,10 @@
     <main>
         <section>
             <div class="">
-                <div class="row flex-row-reverse align-items-center m-0">
-                    <div class="col-xxl-6 col-xl-7 col-md-6 col-12"></div>
-                    <div class="col-xxl-4 col-xl-5 col-md-6 col-12">
-                        <div class="">
-                            <!-- <img class="w-100" src="<?= base_url('assets/heading.png') ?>" alt=""> -->
+                <div class="row flex-row-reverse justify-content-center m-0 g-0">
+                    <div class="col-xxl-6 col-xl-7 col-md-9 col-11">
+                        <div class="text-center">
+                            <img class="w-100" src="<?= base_url('assets/banner.png') ?>" alt="">
                         </div>
                     </div>
                 </div>

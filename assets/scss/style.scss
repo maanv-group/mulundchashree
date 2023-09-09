@@ -32,7 +32,7 @@ $colors: (
 	html {
 		font-size: 20px;
 	}
-	section{
+	section {
 		min-height: 90vh;
 	}
 }
@@ -115,9 +115,21 @@ strong {
 main {
 	section {
 		padding: calc(max(5vw, 1rem)) 0;
-		&:nth-child(1){
-			min-height: 90vh;
-			padding: 2rem 0;
+		&:nth-child(1) {
+			min-height: 70vh;
+			padding: 0;
+			background: rgb(255, 0, 0);
+			background: linear-gradient(
+				90deg,
+				rgba(255, 0, 0, 1) 0%,
+				rgba(255, 0, 0, 1) 50%,
+				rgba(255, 0, 0, 0) 50%,
+				rgba(252, 232, 0, 1) 50%,
+				rgba(249, 255, 0, 1) 100%
+			);
+			background-size: 1rem auto;
+			background-repeat: repeat;
+
 		}
 		&:nth-child(2n) {
 			background-color: darken($color: $theme-light-shade, $amount: 5);
@@ -144,7 +156,7 @@ main {
 				}
 			}
 		}
-		&#gallery{
+		&#gallery {
 			.swiper-slide {
 				margin: 1rem !important;
 				.thumb {

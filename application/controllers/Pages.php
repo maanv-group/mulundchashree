@@ -21,7 +21,7 @@ class Pages extends CI_Controller {
 	public function index()
 	{
 		$data['page'] = [
-			'title' => "सार्वजनिक उत्सव मंडळ",
+			'title' => "श्री कृष्ण बाल मित्र मंडळ - सार्वजनिक उत्सव मंडळ",
 			'gallery' => $this->gallery()
 		];
 		$this->load->view('pages/index', $data);

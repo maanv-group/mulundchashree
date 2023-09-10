@@ -14,7 +14,7 @@
     <main>
         <section>
             <div class="row justify-content-center m-0 g-0 align-items-end" style="min-height: 70vh;">
-                <div class="col-xxl-6 col-xl-7 col-md-9 col-11">
+                <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9 col-11">
                     <div class="text-center">
                         <img class="w-100" src="<?= base_url('assets/banner.png') ?>" alt="">
                     </div>
@@ -115,24 +115,38 @@
             </div>
         </section>
         <section id="contact">
-            <div class="page-header">
-                <h1>संपर्क</h1>
-            </div>
-            <div class="page-content">
-                <div class="row m-0 g-0 justify-content-center">
-                    <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9 col-11">
-                        <h3 class="mb-4">
-                            <p>संपर्क:&nbsp;<a href="tel:+918452868585">८४५२८ ६८५८५</a> / <a href="tel:+919029260299">९०२९२ ६०२९९</a></p>
-                            <p>ई-मेल: <a href="mailto:shreekrishnabalmitramandal@gmail.com">shreekrishnabalmitramandal@gmail.com</a></p>
-                        </h3>
-                        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d961.8811096723657!2d72.96076624406781!3d19.169105783466723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8ee5e1311d3%3A0x7772ab4b4f315558!2sMulund%20Cha%20Shree!5e0!3m2!1sen!2sin!4v1694280637322!5m2!1sen!2sin" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container">
+                <div class="page-header">
+                    <h1>संपर्क</h1>
+                </div>
+                <div class="page-content">
+                    <div class="row m-0 g-0 justify-content-center">
+                        <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9 col-11">
+                            <h3 class="mb-4">
+                                <p>संपर्क:&nbsp;<a href="tel:+918452868585">८४५२८ ६८५८५</a> / <a href="tel:+919029260299">९०२९२ ६०२९९</a></p>
+                                <p>ई-मेल: <a href="mailto:shreekrishnabalmitramandal@gmail.com">shreekrishnabalmitramandal@gmail.com</a></p>
+                            </h3>
+                            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d961.8811096723657!2d72.96076624406781!3d19.169105783466723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8ee5e1311d3%3A0x7772ab4b4f315558!2sMulund%20Cha%20Shree!5e0!3m2!1sen!2sin!4v1694280637322!5m2!1sen!2sin" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="donate">
-            <div class="page-header">
-                <h1>देणगी</h1>
+            <div class="container">
+                <div class="page-header">
+                    <h1>देणगी</h1>
+                </div>
+                <div class="page-body">
+                    <div class="row m-0">
+                        <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-12">
+                            <img src="<?= base_url() ?>assets/shreekrishnabalmitramandalindianbk.jpg" alt="UPI" class="w-100">
+                        </div>
+                        <div class="col-xxl-9 col-xl-8 col-lg-7 col-md-6 col-12">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

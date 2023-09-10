@@ -13,7 +13,7 @@
     <?php $this->load->view("components/_common_nav") ?>
     <main>
         <section>
-            <div class="row flex-row-reverse justify-content-center m-0 g-0 align-items-end">
+            <div class="row justify-content-center m-0 g-0 align-items-end" style="min-height: 70vh;">
                 <div class="col-xxl-6 col-xl-7 col-md-9 col-11">
                     <div class="text-center">
                         <img class="w-100" src="<?= base_url('assets/banner.png') ?>" alt="">

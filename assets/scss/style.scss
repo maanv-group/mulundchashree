@@ -163,13 +163,17 @@ main {
 		}
 		&#gallery {
 			.swiper-slide {
-				margin: 1rem !important;
 				.thumb {
 					width: 100%;
 					aspect-ratio: 1;
 					background-position: center;
 					background-size: cover;
 					background-repeat: no-repeat;
+				}
+			}
+			@media screen and (max-width: 512px) {
+				.swiper-slide {
+					margin: 1rem !important;
 				}
 			}
 		}

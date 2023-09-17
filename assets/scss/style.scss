@@ -171,7 +171,7 @@ main {
 					background-repeat: no-repeat;
 				}
 			}
-			@media screen and (max-width: 512px) {
+			@media screen and (min-width: 512px) {
 				.swiper-slide {
 					margin: 1rem !important;
 				}

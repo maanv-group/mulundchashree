@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/mulundcha-shree/';
-$config['base_url'] = 'https://test.mulundchashree.com/';
+$config['base_url'] = 'https://DOBwLZcCk4.mulundchashree.com/';
 
 /*
 |--------------------------------------------------------------------------

@@ -143,13 +143,16 @@
                             <img src="<?= base_url() ?>assets/shreekrishnabalmitramandalindianbk.jpg" alt="UPI" class="w-100">
                         </div>
                         <div class="col-xxl-9 col-xl-8 col-lg-7 col-md-6 col-12">
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <?php $this->load->view("components/_common_footer") ?>
+    </footer>
     <?php $this->load->view("components/_common_js") ?>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
